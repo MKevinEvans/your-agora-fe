@@ -1,0 +1,285 @@
+/**********************
+  ALL
+*********************/
+
+body {
+  background-color: #fdfde9;
+}
+
+h3 {
+  font-family: Baskerville;
+}
+
+label {
+  font-family: Georgia;
+}
+
+a {
+  text-decoration: none;
+  color: #0088cc;
+}
+
+a:hover {
+  color: #d75241;
+}
+
+.button {
+  margin: 0px 5px 15px 5px;
+  font-family: Baskerville;
+  border: solid 1px #273e6d;
+  color: #273e6d;
+}
+
+.button:hover {
+  border: solid 1px #d75241;
+  color: #d75241;
+}
+
+/**********
+ ABOUT PAGE
+**********/
+
+.AboutPage {
+  text-align: left;
+  /* padding-left: 5px; */
+  padding-left: 1%;
+  font-family: Baskerville;
+  font-size: 1.2em;
+}
+
+#about-authors{
+  margin: 2%;
+
+}
+
+/***********
+  HOMEPAGE
+***********/
+
+
+.HomePage {
+  text-align: center;
+}
+
+#homepage-logo {
+  margin-top: 125px;
+}
+
+#search-bar-homepage input[type="text"]{
+  width: 250px;
+}
+
+.sign-links-homepage {
+  margin: 2% 2% 0 0;
+  text-align: right;
+  vertical-align: baseline;
+}
+
+.sign-links-homepage a{
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: 0px 10px;
+}
+
+#sign-links-homepage a {
+  margin: 2% 2% 0 0;
+}
+
+/***********
+  PROFILE
+***********/
+
+#profile-page {
+  margin-left: 20px;
+}
+
+.reaction-list {
+  font-family: Baskerville;
+  font-size: 1.2em;
+}
+
+.reaction-list img {
+  width: 15px;
+}
+
+.reaction-list ul {
+  list-style-type: none;
+}
+
+/***********
+  SEARCH BAR - HOMEPAGE
+***********/
+
+#search-bar-homepage {
+  padding-top: -20px;
+}
+
+/***********
+  SIGNIN/SIGNUP PAGE
+***********/
+
+#signin-container, #signup-container{
+  width: 15%;
+  height: 100%;
+  margin: 10% auto;
+  padding: 5% 5% 3% 5%;
+  background-color: rgba(39,62,109,0.1);
+}
+
+#signin-button, #signup-button {
+  background-color: white;
+}
+
+#browse-as-guest, #already-a-member {
+  font-family: Baskerville;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+/***********
+  HEADER
+***********/
+
+.header-container {
+  width: 100%;
+  background-color: rgba(39,62,109,0.1);
+}
+
+#header-logo {
+  margin: 1% 0 0 1%;
+  width: 40%;
+}
+
+#welcome-message {
+  font-size: 1.5em;
+  font-family: Baskerville;
+}
+
+.signed-in-links, .signed-out-links {
+  text-align: right;
+  vertical-align: baseline;
+}
+
+.nav-bar-container a{
+  font-family: Georgia;
+  font-size: 1em;
+  font-weight: 600;
+  margin: 0px 10px;
+}
+
+#sign-out-link {
+  cursor: pointer;
+}
+
+/***********
+  SEARCH BAR - APP
+***********/
+
+.search-bar {
+  margin-top: 40px;
+  text-align: center;
+}
+
+#search-bar-label {
+  font-family: Georgia;
+}
+
+#search-input {
+  font-family: Baskerville;
+  border: solid 1px #273e6d;
+}
+
+#search-button {
+  font-family: Baskerville;
+  border: solid 1px #273e6d;
+  color: #273e6d;
+  background-color: white;
+}
+
+#search-button:hover {
+  border: solid 1px #d75241;
+  color: #d75241;
+}
+
+/***********
+  MAIN TEASER
+***********/
+
+#teaser-preview{
+  width: 100%;
+  max-height:350px;
+  overflow:hidden;
+  text-overflow: ellipsis;
+  content: "";
+  background: -webkit-linear-gradient(#000, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#article-container {
+  margin: 0px auto;
+  padding-top: 50px;
+  text-align: center;
+  width: 75%;
+  font-family: Baskerville;
+  font-size: 1.2em;
+}
+
+#article-container img {
+  width: 500px;
+}
+
+#main-teaser h1 {
+  font-family: Georgia;
+}
+
+/***********
+  MAIN ARTICLE
+***********/
+
+#reaction-buttons {
+  display: inline;
+}
+
+#reaction-buttons img {
+  width: 50px;
+  margin: 10px 20px;
+}
+
+#reaction-buttons a:hover {
+  opacity: 0.5;
+}
+
+/***********
+  SOURCE
+***********/
+
+#source-link {
+  text-decoration: underline;
+}
+
+/*#source-display {
+  color: #d75241;
+}*/
+
+/***********
+  FOOTER
+***********/
+
+#footer-container {
+  text-align: center;
+  bottom : 0;
+  height : 100px;
+  width: 100%;
+  margin-top : 40px;
+  background-color: rgba(39,62,109,0.1);
+}
+
+/***********
+  NOT FOUND
+***********/
+
+#not-found {
+  font-family: Baskerville;
+  text-align: center;
+}
