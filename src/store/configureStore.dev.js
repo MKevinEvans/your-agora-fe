@@ -1,10 +1,10 @@
 import { createStore, applyMiddleware, compose } from 'redux'
-import promise from 'redux-promise'
+// import promise from 'redux-promise'
 import reducer from '../reducers'
 
 export default function configureStore(initialState){
 	const finalCreateStore - compose(
-		applyMiddleware(promise),
+		applyMiddleware(thunk),
 		window.devToolExtension ? window.devToolExtension( : f => f
 		)(creatStore);
 
