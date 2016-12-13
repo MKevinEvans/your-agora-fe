@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 // import App from './components/App';
-import configureStore from './store/configureStore.js'
+import store from './store'
 import { Provider } from 'react-redux'
 import { Router, browserHistory } from 'react-router'
 import routes from './routes';
 
-const store = configureStore()
+
 
 
 ReactDOM.render(
