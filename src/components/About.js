@@ -46,30 +46,29 @@ export default function About(props) {
 
           <div className="three columns" id="info-colby">
             <b> Colby Pines </b>
-            <em>@wcpines</em>
+            <em><a href="https://github.com/wcpines/" target="_blank">@wcpines</a></em>
             <p>
-              Former philosophy major turned technologist.  When not hacking around with the latest web technologies,
-              Colby enjoys running, rock climbing, and jazz.  He also has a growing interest in dev-ops and security.
+              Former philosophy major turned technologist.  When not honing his development skills,
+              Colby enjoys running, rock climbing, and jazz.  He also has a growing interest in dev-ops and lowering his regex golf handicap.
             </p>
           </div>
 
           <div className="three columns" id="info-kevin">
             <b> Kevin Evans </b>
-            <em>@mkevinevans</em>
+            <em><a href="https://github.com/MKevinEvans" target="_blank">@mkevinevans</a></em>
             <p>
-              Elen sila lumenn omentilmo, Nae saian luume'. Cormamin lindua ele lle. Saesa omentien lle,
-              vanya sulie Namaarie. Aa' lasser en lle coia orn n' omenta gurtha. Aa' i'sul nora lanne'lle.
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed.
+              Kevin taught Music Technology at Santa Barbara City College where he became enthralled by the idea that technology can provide new ways to communicate, engage, and educate. He is a great fan of learning, and loves new ways of telling old stories.
             </p>
           </div>
 
           <div className="three columns" id="info-tom">
             <b> Tom Marren </b>
-            <em>@tommarren</em>
+            <em><a href="https://github.com/thomasmarren" target="_blank">@thomasmarren</a></em>
             <p>
-              Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
-              vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
-              zzril delenit augue duis dolore te feugait nulla facilisi.
+              Returned Peace Corps volunteer who turned his love of languages from Spanish to programming.
+              When he's not advocating for object oriented design, you can find Tom homebrewing,
+              playing soccer, or listening to hip hop.
+
             </p>
           </div>
 
