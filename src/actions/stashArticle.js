@@ -3,7 +3,7 @@ import $ from 'jquery'
 export default function stashArticle(stashId){
   return function(dispatch){
     $.ajax({
-      url: `https://development-your-agora-api.herokuapp.com/stashes`,
+      url: `https://your-agora-api.herokuapp.com/stashes`,
       type: "POST",
       headers: {authorization: localStorage.getItem('jwt')},
       contentType: 'application/json; charset=utf-8',
