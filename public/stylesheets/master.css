@@ -252,6 +252,10 @@ a:hover {
   -webkit-text-fill-color: transparent;
 }
 
+#thumbnail{
+  max-width: 80%;
+}
+
 #article-container {
   margin: 0px auto;
   padding-top: 50px;
