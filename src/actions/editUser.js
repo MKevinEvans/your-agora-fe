@@ -3,7 +3,7 @@ import { browserHistory } from 'react-router'
 
 export default function editUser(id, name, email){
   return function(dispatch){
-    $.ajax({url: `https://youragora.herokuapp.com/users/${id}`,
+    $.ajax({url: `https://your-agora-api.herokuapp.com/users/${id}`,
       type: "PUT",
       data: JSON.stringify({auth: {name: name, email: email}}),
       contentType: 'application/json; charset=utf-8',

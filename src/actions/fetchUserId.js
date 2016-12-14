@@ -4,7 +4,7 @@ export default function fetchUserId(){
   return function(dispatch){
     dispatch({type: 'FETCHING_USER'})
     $.ajax({
-      url: "https://youragora.herokuapp.com/users",
+      url: "https://your-agora-api.herokuapp.com/users",
       type: "GET",
       headers: {authorization: localStorage.getItem('jwt')}
     }).done(function(data){

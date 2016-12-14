@@ -6,14 +6,14 @@ export default function fetchArticles(searchTerm, currentUserId){
   return function(dispatch){
     dispatch({type: 'FETCHING_ARTICLES'})
     $.ajax({
-      url: `https://youragora.herokuapp.com/search_terms`,
+      url: `https://your-agora-api.herokuapp.com/search_terms`,
       type: 'POST',
       data: JSON.stringify({search_term: searchTerm}),
       contentType: 'application/json; charset=utf-8',
       dataType: 'json'
     }).done(function(){
       $.ajax({
-        url: `https://youragora.herokuapp.com/fetch_first_article`,
+        url: `https://your-agora-api.herokuapp.com/fetch_first_article`,
         type: 'POST',
         data: JSON.stringify({search_term: searchTerm, current_user_id: currentUserId }),
         contentType: 'application/json; charset=utf-8',
@@ -27,7 +27,7 @@ export default function fetchArticles(searchTerm, currentUserId){
           dispatch({type: 'FETCHED_FIRST_ARTICLE'})
           browserHistory.push('/articles/random/teaser')
           $.ajax({
-            url: `https://youragora.herokuapp.com/articles`,
+            url: `https://your-agora-api.herokuapp.com/articles`,
             type: 'POST',
             data: JSON.stringify({search_term: searchTerm, current_user_id: currentUserId }),
             contentType: 'application/json; charset=utf-8',

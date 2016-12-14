@@ -3,7 +3,7 @@ import $ from 'jquery'
 export default function unstashArticle(stashId){
   return function(dispatch){  
     $.ajax({
-      url: `https://youragora.herokuapp.com/stashes/`+stashId,
+      url: `https://your-agora-api.herokuapp.com/stashes/`+stashId,
       type: "DELETE",
       headers: {authorization: localStorage.getItem('jwt')},
       contentType: 'application/json; charset=utf-8',
