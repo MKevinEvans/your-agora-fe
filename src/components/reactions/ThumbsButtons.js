@@ -22,13 +22,13 @@ class ThumbsButtons extends Component {
     return(
       <div id="reaction-buttons">
         <Link to={href} id="disagree" onClick={this.handleReaction}>
-          <img role="presentation" src="/images/thumbs-down.png" />
+          <img role="presentation" alt="I dislike this" src="/images/thumbs-down.png" />
         </Link>
         <Link to={href} id="neutral" onClick={this.handleReaction} >
-          <img role="presentation" src="/images/neutral.png" />
+          <img role="presentation" alt="I feel neutral about this" src="/images/neutral.png" />
         </Link>
         <Link to={href} id="agree" onClick={this.handleReaction}>
-          <img role="presentation" src="/images/thumbs-up.png" />
+          <img role="presentation" alt="I feel good about this" src="/images/thumbs-up.png" />
         </Link>
       </div>
     )
