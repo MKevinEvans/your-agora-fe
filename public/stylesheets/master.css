@@ -252,10 +252,6 @@ a:hover {
   -webkit-text-fill-color: transparent;
 }
 
-#thumbnail{
-  max-width: 80%;
-}
-
 #article-container {
   margin: 0px auto;
   padding-top: 50px;
@@ -266,8 +262,12 @@ a:hover {
 }
 
 #article-container img {
-  width: 500px;
+  max-width: 80%;
 }
+
+/*#thumbnail{
+  max-width: 80%;
+}*/
 
 #main-teaser h1 {
   font-family: Georgia;
