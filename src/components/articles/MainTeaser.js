@@ -7,7 +7,7 @@ import UnstashArticleButton from '../reactions/UnstashArticleButton'
 
 function MainTeaser(props){
 
-  let href = '/articles/random/main#article-container'
+  let href = '/articles/random/main'
 
   let preview = previewContent(props.article.content, props.article)
 

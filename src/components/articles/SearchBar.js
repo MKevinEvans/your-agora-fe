@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import fetchArticles from '../../actions/fetchArticles'
+import FetchingFirstArticleSpinner from './FetchingFirstArticleSpinner'
 
 class SearchBar extends Component{
 
@@ -15,6 +16,7 @@ class SearchBar extends Component{
   handleClick(event){
     event.preventDefault()
     this.props.fetchArticles(this.state.searchTerm, this.props.currentUserId)
+    var element = document.getElementById("spinner");;
   }
 
   handleSearch(event){
@@ -23,10 +25,6 @@ class SearchBar extends Component{
 
   render(){
 
-    var fetching_first_article_spinner;
-    if(this.props.fetching_first_article){
-      fetching_first_article_spinner = <img role="presentation" src="/images/courier.gif" />
-    }
 
     return(
       <div className='search-bar'>
@@ -34,7 +32,7 @@ class SearchBar extends Component{
           <input id='search-input' type="text" onChange={this.handleSearch}/>
           <input id="search-button" type='submit' disabled={this.props.fetching} className='search-bar' name='submit' value='Search'/>
         </form>
-        {fetching_first_article_spinner}
+        <FetchingFirstArticleSpinner />
       </div>
     )
   }
