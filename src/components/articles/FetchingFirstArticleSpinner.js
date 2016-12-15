@@ -15,7 +15,7 @@ class FetchingFirstArticleSpinner extends Component{
 
 
 function mapStateToProps(state){
-  return {fetching: state.articles.fetching}
+  return {fetching: state.articles.fetching_first_article}
   
 }
 
