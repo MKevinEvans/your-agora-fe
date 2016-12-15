@@ -8,8 +8,7 @@ class FetchingFirstArticleSpinner extends Component{
 	    if(this.props.fetching){
 	  		return ( <img role="presentation" id="spinner" src="/images/courier.gif" /> )
 		} else {
-			debugger
-			return ( <div id="spinner">//</div>)
+			return ( <div id="spinner"> </div>)
 		}
 	}
 }
