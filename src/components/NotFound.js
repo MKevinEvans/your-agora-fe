@@ -9,7 +9,7 @@ export default function Footer(props) {
     <h1>the page you are looking for</h1>
     <img role="presentation" src="https://cdn.drawception.com/images/panels/2015/3-22/6DCA2LqgT1-6.png" />
     <br />
-    <Link to="/" ><h4>Back to home</h4></Link>
+    <Link to="https://youragora.herokuapp.com" ><h4>Back to home</h4></Link>
     </div>
   )
 
