@@ -9,6 +9,11 @@ import UnstashArticleButton from '../reactions/UnstashArticleButton'
 
 class MainArticle extends Component{
 
+  componentDidMount(){
+    var element = document.getElementById("article-container");
+    element.scrollIntoView()
+  }
+
   render(){
     // if(this.props.article.id === undefined){
     //       browserHistory.push('/')}
