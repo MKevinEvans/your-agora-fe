@@ -53,7 +53,7 @@ function previewContent(content, article){
   var redactedContent = content.replace(regex, "[REDACTED BY YOURAGORA]")
 
   if(redactedContent.includes("<p>")){
-    if(redactedContent.match(/<p>/g).length > 2){
+    if(redactedContent.match(/<p>/g).length > 3){
       var fixedContent = redactedContent.replace(/(<img)(.*?)(>)/g, '')
       var pattern = /(<p>)(.*?)(<\/p>)/g
       // TODO: Can we loop this more elegantly?
